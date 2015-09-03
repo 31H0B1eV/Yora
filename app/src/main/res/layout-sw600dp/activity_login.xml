@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_login_header"
+        layout="@layout/include_login_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/include_login_header"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/md_grey_300">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.zinoviev.yora.fragments.LoginFragment"
+                android:id="@+id/activity_login_fragment"
+                tools:layout="@layout/fragment_login"/>
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/yora_register"
+            android:id="@+id/activity_login_register"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yora_facebook_login"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/activity_login_facebook"
+                tools:ignore="RtlCompat"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yora_google_login"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:id="@+id/activity_login_google"
+                tools:ignore="RtlCompat"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

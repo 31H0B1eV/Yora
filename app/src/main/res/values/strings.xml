@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Yora</string>
-    <string name="do_login">Login</string>
+    <string name="app_name">Yora!</string>
+    <string name="do_login">Log in</string>
+    <string name="yora_login">Yora! Log in</string>
+    <string name="yora_register">Yora! Register</string>
+    <string name="yora_facebook_login">Facebook Log In</string>
+    <string name="yora_google_login">Google Log in</string>
+    <string name="user_name_hint">User Name</string>
+    <string name="user_password_hint">Password</string>
 </resources>
