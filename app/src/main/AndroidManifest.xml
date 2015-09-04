@@ -19,6 +19,8 @@
 
         <activity android:name=".activities.LoginNarrowActivity" />
 
+        <activity android:name=".activities.RegisterActivity" />
+
     </application>
 
 </manifest>
